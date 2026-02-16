@@ -56,7 +56,7 @@ const education = [
       "Achieved 1st Rank in University",
       "Focused on advanced computer science concepts and software development",
     ],
-    certificate: "/certificates/mca-first-rank.jpg",
+    certificate: "/certificates/Rank Certificate.png",
   },
   {
     title: "Bachelor of Computer Applications (BCA)",

@@ -9,6 +9,9 @@ const PreviewModal = ({ isOpen, onClose, fileSrc, title, fileType = "image" }) =
   // Determine if file is PDF or image
   const isPdf = fileType === "pdf" || fileSrc?.toLowerCase().endsWith(".pdf");
   const isImage = !isPdf;
+  
+  // URL encode the file path to handle spaces and special characters
+  const encodedFileSrc = fileSrc ? encodeURI(fileSrc) : fileSrc;
 
   useEffect(() => {
     if (isOpen) {
@@ -54,9 +57,9 @@ const PreviewModal = ({ isOpen, onClose, fileSrc, title, fileType = "image" }) =
 
   const handleDownload = () => {
     const link = document.createElement("a");
-    link.href = fileSrc;
+    link.href = encodedFileSrc;
     const fileName = title 
-      ? `${title.replace(/\s+/g, "-")}.${isPdf ? "pdf" : "jpg"}`
+      ? `${title.replace(/\s+/g, "-")}.${isPdf ? "pdf" : fileSrc?.split('.').pop() || "jpg"}`
       : isPdf 
         ? "document.pdf" 
         : "image.jpg";
@@ -69,7 +72,7 @@ const PreviewModal = ({ isOpen, onClose, fileSrc, title, fileType = "image" }) =
   const handlePrint = () => {
     if (isPdf) {
       // For PDF, open in new window and trigger print
-      const printWindow = window.open(fileSrc, "_blank");
+      const printWindow = window.open(encodedFileSrc, "_blank");
       if (printWindow) {
         printWindow.onload = () => {
           setTimeout(() => {
@@ -90,7 +93,7 @@ const PreviewModal = ({ isOpen, onClose, fileSrc, title, fileType = "image" }) =
             </style>
           </head>
           <body>
-            <img src="${fileSrc}" alt="${title || "Document"}" />
+            <img src="${encodedFileSrc}" alt="${title || "Document"}" />
           </body>
         </html>
       `);
@@ -226,7 +229,7 @@ const PreviewModal = ({ isOpen, onClose, fileSrc, title, fileType = "image" }) =
               {isPdf ? (
                 // PDF Viewer
                 <iframe
-                  src={`${fileSrc}#toolbar=0`}
+                  src={`${encodedFileSrc}#toolbar=0`}
                   className="w-full h-full min-h-[calc(85vh-100px)] border-0"
                   title={title || "PDF Document"}
                   onLoad={() => setIsFileLoaded(true)}
@@ -239,7 +242,7 @@ const PreviewModal = ({ isOpen, onClose, fileSrc, title, fileType = "image" }) =
                 <>
                   {isFileLoaded && (
                     <motion.img
-                      src={fileSrc}
+                      src={encodedFileSrc}
                       alt={title || "Image"}
                       className="max-w-full max-h-[calc(85vh-100px)] object-contain transition-all duration-300"
                       style={{
@@ -251,10 +254,14 @@ const PreviewModal = ({ isOpen, onClose, fileSrc, title, fileType = "image" }) =
                   )}
                   {!isFileLoaded && (
                     <img
-                      src={fileSrc}
+                      src={encodedFileSrc}
                       alt={title || "Image"}
                       className="opacity-0 max-w-full max-h-[calc(85vh-100px)] object-contain"
                       onLoad={() => setIsFileLoaded(true)}
+                      onError={() => {
+                        console.error("Failed to load image:", encodedFileSrc);
+                        setIsFileLoaded(false);
+                      }}
                       loading="eager"
                     />
                   )}

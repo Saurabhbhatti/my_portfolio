@@ -30,7 +30,7 @@ function App() {
           <QuickStats />
           <Education />
           <Experience />
-          <Extracurricular />
+          {/* <Extracurricular /> */}
           <Tech />
           <Works />
           <div className="div relative z-0">

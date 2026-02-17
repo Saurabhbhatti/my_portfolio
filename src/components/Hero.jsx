@@ -71,7 +71,7 @@ const WavingHand = () => {
 const Hero = () => {
   const typedItems = [
     "Software Developer",
-    "Frontend Developwer",
+    "Frontend Developer",
     "Backend Developer",
     "Full Stack Developer",
     "Computer Enthusiast",
@@ -117,7 +117,7 @@ const Hero = () => {
           </p>
           
           {/* CTA Buttons */}
-          <div className="flex flex-wrap gap-4 mt-6 sm:mt-8 md:mt-10 relative z-50">
+          <div className="flex flex-wrap gap-3 mt-4 sm:mt-6 md:mt-8 relative z-50">
             <motion.button
               type="button"
               onClick={(e) => {
@@ -144,7 +144,7 @@ const Hero = () => {
               }}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="px-6 sm:px-8 py-3 sm:py-4 bg-gradient-to-r from-[#915EFF] to-[#00BFFF] text-white font-semibold text-sm sm:text-base rounded-lg shadow-lg hover:shadow-xl transition-all cursor-pointer relative z-50"
+              className="px-4 sm:px-5 py-2 sm:py-2.5 bg-gradient-to-r from-[#915EFF] to-[#00BFFF] text-white font-semibold text-xs sm:text-sm rounded-lg shadow-lg hover:shadow-xl transition-all cursor-pointer relative z-50"
               style={{ pointerEvents: 'auto', position: 'relative', zIndex: 50 }}
             >
               View My Work
@@ -175,7 +175,7 @@ const Hero = () => {
               }}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="px-6 sm:px-8 py-3 sm:py-4 bg-transparent border-2 border-accent-purple text-text-primary font-semibold text-sm sm:text-base rounded-lg hover:bg-accent-purple/20 transition-all cursor-pointer relative z-50"
+              className="px-4 sm:px-5 py-2 sm:py-2.5 bg-transparent border-2 border-accent-purple text-text-primary font-semibold text-xs sm:text-sm rounded-lg hover:bg-accent-purple/20 transition-all cursor-pointer relative z-50"
               style={{ pointerEvents: 'auto', position: 'relative', zIndex: 50 }}
             >
               Get In Touch

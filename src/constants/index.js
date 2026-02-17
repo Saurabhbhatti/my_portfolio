@@ -25,10 +25,10 @@ export const navLinks = [
     id: "work",
     title: "Work",
   },
-  {
-    id: "extracurricular",
-    title: "Certifications",
-  },
+  // {
+  //   id: "extracurricular",
+  //   title: "Certifications",
+  // },
   {
     id: "skills",
     title: "Skills",
@@ -93,7 +93,7 @@ const experiences = [
     company_name: "Mayora Infotech Pvt. Ltd.",
     icon: mayora,
     iconBg: "#fff",
-    date: "2021 - Present",
+    date: "April-2024 - June-2025",
     points: [
       "Developed responsive and scalable web applications using ReactJS, TypeScript, Redux Toolkit, and Tailwind CSS.",
       "Converted Figma and UI/UX designs into pixel-perfect, reusable React components.",
@@ -107,7 +107,7 @@ const experiences = [
     company_name: "ANG Software",
     icon: angsoftware,
     iconBg: "#fff",
-    date: "2020 - 2021",
+    date: "Oct-2021 - April-2024",
     points: [
       "Built responsive and scalable web applications using ReactJS, Redux-Saga, and Tailwind CSS.",
       "Translated UI/UX wireframes into pixel-perfect interfaces across healthcare and e-commerce domains.",

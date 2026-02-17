@@ -1,7 +1,7 @@
 import profilepic from './pfp.png';
 
 import github from "./github.png";
-import gitlab from "./tech/git_lab.png"
+import gitlab from "./tech/git_lab.svg"
 import jira from "./tech/jira.png"
 
 import css from "./tech/css.png";

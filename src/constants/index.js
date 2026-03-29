@@ -2,6 +2,7 @@ import {
   prmitr,
   sgbau,
   maharashtra_board,
+  neosoft,
   mayora,
   angsoftware,
   google,
@@ -90,30 +91,50 @@ const education = [
 const experiences = [
   {
     title: "React.js Developer",
+    company_name: "NeoSOFT Pvt. Ltd.",
+    icon: neosoft, // add your icon import
+    iconBg: "#fff",
+    date: "June-2025 - Present",
+    points: [
+      "Engineered a real-time production monitoring system to capture and visualize live manufacturing data, improving operational visibility.",
+      "Built factory tracking dashboards to monitor machine status and production workflows.",
+      "Enhanced production planning & scheduling system, improving workflow efficiency and resource utilization.",
+      "Created data-driven dashboards for business insights and decision-making.",
+      "Executed audit support features for validating production records during month-end audits.",
+      "Incorporated REST APIs for real-time system updates and workflows.",
+      "Streamlined application performance by ~20% using lazy loading, memoization, and code splitting.",
+      "Reduced manual audit effort by ~25% by digitizing audit workflows.",
+      "Improved UI rendering efficiency by ~15% through optimized component architecture.",
+      "Collaborated with cross-functional teams in Agile environment."
+    ],
+  },
+  {
+    title: "React.js Developer",
     company_name: "Mayora Infotech Pvt. Ltd.",
     icon: mayora,
     iconBg: "#fff",
     date: "April-2024 - June-2025",
     points: [
-      "Developed responsive and scalable web applications using ReactJS, TypeScript, Redux Toolkit, and Tailwind CSS.",
-      "Converted Figma and UI/UX designs into pixel-perfect, reusable React components.",
-      "Integrated RESTful APIs and handled complex asynchronous flows using Redux-Saga.",
-      "Collaborated with backend teams to define API contracts, manage error states, and optimize data flow.",
-      "Ensured cross-browser compatibility, performance optimization, and clean, maintainable code.",
+      "Developed scalable frontend applications using React.js, TypeScript, Redux-Saga, and Tailwind CSS.",
+      "Translated Figma designs into pixel-perfect, responsive interfaces.",
+      "Merged REST APIs to improve frontend-backend communication workflows.",
+      "Reduced API integration time by ~30–35% through optimized state management and reusable services.",
+      "Enhanced UI performance by ~15% by minimizing unnecessary re-renders.",
+      "Ensured cross-browser compatibility and responsive design across devices."
     ],
   },
   {
     title: "UI / React.js Developer",
-    company_name: "ANG Software",
+    company_name: "ANG Softwares Pvt. Ltd.",
     icon: angsoftware,
     iconBg: "#fff",
-    date: "Oct-2021 - April-2024",
+    date: "Oct-2021 - March-2024",
     points: [
-      "Built responsive and scalable web applications using ReactJS, Redux-Saga, and Tailwind CSS.",
-      "Translated UI/UX wireframes into pixel-perfect interfaces across healthcare and e-commerce domains.",
-      "Integrated RESTful APIs to enable smooth data communication between frontend and backend.",
-      "Managed asynchronous state logic to enhance application performance and user experience.",
-      "Collaborated with designers and backend engineers in Agile development environments.",
+      "Created responsive web applications using React.js and modern JavaScript.",
+      "Built reusable UI components to improve maintainability and scalability.",
+      "Integrated REST APIs for seamless data communication between frontend and backend.",
+      "Ensured cross-browser compatibility and responsive UI across devices.",
+      "Collaborated with designers and backend engineers in Agile development environments."
     ],
   },
 ];
@@ -189,9 +210,31 @@ const extracurricular = [
 
 const projects = [
   {
+    name: "C6 (Carbon 6) – Audit Management System",
+    description:
+      "Built a centralized audit platform to manage month-wise operational, financial, and resource data across manufacturing units. Enabled tracking of raw materials, fuel usage, procurement costs, and workforce data. Developed real-time dashboards and validation workflows, reducing manual audit effort by ~25% and improving compliance readiness.",
+    tags: [
+      { name: "React JS", color: "blue-text-gradient" },
+      { name: "TypeScript", color: "green-text-gradient" },
+      { name: "Tailwind CSS", color: "pink-text-gradient" },
+      { name: "REST API", color: "blue-text-gradient" },
+    ],
+  },
+  {
+    name: "History Card Digitization System",
+    description:
+      "Designed a digital system to track product lifecycle across assembly lines and workstations. Enabled real-time tracking across manufacturing, quality, packaging, and audit teams. Improved traceability and quality control by replacing manual records with structured digital workflows.",
+    tags: [
+      { name: "React JS", color: "blue-text-gradient" },
+      { name: "TypeScript", color: "green-text-gradient" },
+      { name: "Tailwind CSS", color: "pink-text-gradient" },
+      { name: "REST API", color: "blue-text-gradient" },
+    ],
+  },
+  {
     name: "Monitor Mate (Workforce Management)",
     description:
-      "Monitor Mate is a workforce management and employee productivity platform built to track work hours, capture periodic screenshots, manage leaves and holidays, and generate Daily Status Reports (DSR). I developed responsive and interactive UI modules using ReactJS and TypeScript, implemented real-time time tracking and screenshot monitoring features, and integrated RESTful APIs with Redux-Saga for reliable asynchronous state management. The platform improves productivity, accountability, and performance monitoring for both remote and in-office teams.",
+      "Developed a workforce management platform to track employee activity, work hours, and productivity. Implemented real-time time tracking, screenshot monitoring, and DSR features. Integrated APIs using Redux-Saga to ensure reliable asynchronous data handling and improve team productivity visibility.",
     tags: [
       { name: "React JS", color: "blue-text-gradient" },
       { name: "TypeScript", color: "green-text-gradient" },
@@ -202,7 +245,7 @@ const projects = [
   {
     name: "Wheel (Cybersecurity Platform)",
     description:
-      "Wheel is a cybersecurity web application designed to monitor and protect domains from threats such as phishing, email spoofing, and malicious activities. I worked on building the complete frontend architecture using ReactJS and TypeScript, implemented Redux-Saga for handling complex asynchronous operations, and integrated RESTful APIs for real-time threat analysis and data visualization. The application delivers a secure, responsive, and user-friendly interface for managing domain security.",
+      "Built a cybersecurity platform to monitor domains and detect threats such as phishing and spoofing. Developed scalable frontend architecture with real-time dashboards and data visualization, enabling efficient threat analysis and improved system reliability.",
     tags: [
       { name: "React JS", color: "blue-text-gradient" },
       { name: "TypeScript", color: "green-text-gradient" },
@@ -213,7 +256,7 @@ const projects = [
   {
     name: "OTC-BODY (Healthcare Platform)",
     description:
-      "OTC-BODY is a healthcare web application developed to simplify appointment booking with real-time doctor availability and seamless navigation. I built responsive user interfaces using ReactJS, Material UI, and Bootstrap, implemented React Router for smooth page transitions, and ensured cross-browser compatibility and mobile responsiveness. The platform enhances patient engagement and improves the overall booking experience across devices.",
+      "Developed a healthcare platform for seamless appointment booking with real-time doctor availability. Built responsive UI using ReactJS and Material UI, improving user experience and accessibility across devices.",
     tags: [
       { name: "React JS", color: "blue-text-gradient" },
       { name: "Material UI", color: "green-text-gradient" },
@@ -224,7 +267,7 @@ const projects = [
   {
     name: "Hospitania (Healthcare Domain)",
     description:
-      "Hospitania is a healthcare application focused on delivering a high-quality digital experience through scalable and reusable UI components. I developed multiple reusable components using ReactJS, implemented Formik-based dynamic forms with validations, and managed application state using React hooks and context. Close collaboration with backend and QA teams ensured seamless integration, maintainability, and consistent user experience.",
+      "Created scalable and reusable UI components for a healthcare platform. Implemented dynamic forms with validation using Formik and managed state using React hooks, ensuring maintainability and consistent user experience.",
     tags: [
       { name: "React JS", color: "blue-text-gradient" },
       { name: "Formik", color: "green-text-gradient" },
@@ -235,7 +278,7 @@ const projects = [
   {
     name: "MultiKart (E-commerce Platform)",
     description:
-      "MultiKart is an e-commerce web application built with a scalable and maintainable frontend architecture. I developed reusable UI components using ReactJS and TypeScript, implemented Redux-Saga for managing complex asynchronous workflows, and built authentication flows with form validation. Performance optimizations such as lazy loading and code splitting were applied, along with accessibility and SEO best practices to enhance overall user experience.",
+      "Built an e-commerce platform with reusable components and scalable architecture. Implemented Redux-Saga for handling asynchronous workflows and applied performance optimizations such as lazy loading and code splitting to enhance user experience.",
     tags: [
       { name: "React JS", color: "blue-text-gradient" },
       { name: "Redux-Saga", color: "green-text-gradient" },

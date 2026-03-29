@@ -108,84 +108,83 @@ const About = () => {
           variants={fadeIn("left", "spring", 0.5, 0.75)}
           className="w-full md:w-2/3"
         >
-          <motion.ul
-            variants={fadeIn("", "", 0.1, 1)}
-            className="mt-4 sm:mt-6 text-secondary text-[14px] sm:text-[15px] md:text-[16px] lg:text-[17px] max-w-3xl space-y-4 sm:space-y-5 md:space-y-6 list-none"
+        <motion.ul
+          variants={fadeIn("", "", 0.1, 1)}
+          className="mt-4 sm:mt-6 text-secondary text-[14px] sm:text-[15px] md:text-[16px] lg:text-[17px] max-w-3xl space-y-4 sm:space-y-5 md:space-y-6 list-none"
+        >
+          <motion.li
+            variants={fadeIn("up", "spring", 0.1, 0.75)}
+            className="flex items-start"
           >
-            <motion.li
-              variants={fadeIn("up", "spring", 0.1, 0.75)}
-              className="flex items-start"
-            >
-              <span className="mr-3 sm:mr-4 text-xl sm:text-2xl flex-shrink-0">👨‍💻</span>
-              <span className="leading-relaxed">
-                Front-End Developer with <strong>4+ years of experience</strong>{" "}
-                specializing in
-                <strong> React.js, TypeScript, and Redux</strong>, building
-                scalable and high-performance web applications.
-              </span>
-            </motion.li>
+            <span className="mr-3 sm:mr-4 text-xl sm:text-2xl flex-shrink-0">👨‍💻</span>
+            <span className="leading-relaxed">
+              Front-End Developer with <strong>4+ years of experience</strong>{" "}
+              specializing in <strong>React.js, TypeScript, and Redux</strong>,
+              building scalable and high-performance web applications.
+            </span>
+          </motion.li>
 
-            <motion.li
-              variants={fadeIn("up", "spring", 0.2, 0.75)}
-              className="flex items-start"
-            >
-              <span className="mr-3 sm:mr-4 text-xl sm:text-2xl flex-shrink-0">🏢</span>
-              <span className="leading-relaxed">
-                Currently working at <strong>Mayora Infotech Pvt. Ltd.</strong>,
-                delivering production-ready frontend solutions using ReactJS,
-                TypeScript, Tailwind CSS, and Material UI.
-              </span>
-            </motion.li>
+          <motion.li
+            variants={fadeIn("up", "spring", 0.2, 0.75)}
+            className="flex items-start"
+          >
+            <span className="mr-3 sm:mr-4 text-xl sm:text-2xl flex-shrink-0">🏢</span>
+            <span className="leading-relaxed">
+              Currently working at <strong>NeoSOFT Pvt. Ltd.</strong>, developing
+              real-time manufacturing systems including{" "}
+              <strong>production monitoring, factory tracking dashboards, and audit platforms</strong>.
+            </span>
+          </motion.li>
 
-            <motion.li
-              variants={fadeIn("up", "spring", 0.3, 0.75)}
-              className="flex items-start"
-            >
-              <span className="mr-3 sm:mr-4 text-xl sm:text-2xl flex-shrink-0">🧠</span>
-              <span className="leading-relaxed">
-                Strong expertise in{" "}
-                <strong>component-based architecture</strong>, Redux Toolkit,
-                Redux-Saga, React Router, and RESTful API integration.
-              </span>
-            </motion.li>
+          <motion.li
+            variants={fadeIn("up", "spring", 0.3, 0.75)}
+            className="flex items-start"
+          >
+            <span className="mr-3 sm:mr-4 text-xl sm:text-2xl flex-shrink-0">📊</span>
+            <span className="leading-relaxed">
+              Built <strong>real-time dashboards and data-driven applications</strong>{" "}
+              improving operational visibility and reducing manual audit effort by{" "}
+              <strong>~25%</strong>.
+            </span>
+          </motion.li>
 
-            <motion.li
-              variants={fadeIn("up", "spring", 0.4, 0.75)}
-              className="flex items-start"
-            >
-              <span className="mr-3 sm:mr-4 text-xl sm:text-2xl flex-shrink-0">🚀</span>
-              <span className="leading-relaxed">
-                Worked on real-world products across{" "}
-                <strong>
-                  Cybersecurity, Healthcare, Workforce Management, and
-                  E-commerce
-                </strong>{" "}
-                domains.
-              </span>
-            </motion.li>
+          <motion.li
+            variants={fadeIn("up", "spring", 0.4, 0.75)}
+            className="flex items-start"
+          >
+            <span className="mr-3 sm:mr-4 text-xl sm:text-2xl flex-shrink-0">🚀</span>
+            <span className="leading-relaxed">
+              Worked across multiple domains including{" "}
+              <strong>
+                Manufacturing, Cybersecurity, Workforce Management, and Healthcare
+              </strong>
+              , delivering scalable enterprise solutions.
+            </span>
+          </motion.li>
 
-            <motion.li
-              variants={fadeIn("up", "spring", 0.5, 0.75)}
-              className="flex items-start"
-            >
-              <span className="mr-3 sm:mr-4 text-xl sm:text-2xl flex-shrink-0">⚙️</span>
-              <span className="leading-relaxed">
-                Experienced in performance optimization, async state handling,
-                debugging, and Agile collaboration.
-              </span>
-            </motion.li>
+          <motion.li
+            variants={fadeIn("up", "spring", 0.5, 0.75)}
+            className="flex items-start"
+          >
+            <span className="mr-3 sm:mr-4 text-xl sm:text-2xl flex-shrink-0">⚙️</span>
+            <span className="leading-relaxed">
+              Strong expertise in <strong>component architecture, Redux-Saga</strong>,
+              REST API integration, and performance optimization techniques like{" "}
+              <strong>lazy loading and code splitting</strong>.
+            </span>
+          </motion.li>
 
-            <motion.li
-              variants={fadeIn("up", "spring", 0.6, 0.75)}
-              className="flex items-start"
-            >
-              <span className="mr-3 sm:mr-4 text-xl sm:text-2xl flex-shrink-0">💡</span>
-              <span className="leading-relaxed">
-                Passionate about clean UI, scalable frontend architecture, and
-                continuous learning.
-              </span>
-            </motion.li>
-          </motion.ul>
+          <motion.li
+            variants={fadeIn("up", "spring", 0.6, 0.75)}
+            className="flex items-start"
+          >
+            <span className="mr-3 sm:mr-4 text-xl sm:text-2xl flex-shrink-0">💡</span>
+            <span className="leading-relaxed">
+              Passionate about building clean, scalable UI systems and continuously
+              improving performance and user experience.
+            </span>
+          </motion.li>
+        </motion.ul>
         </motion.div>
       </div>
 

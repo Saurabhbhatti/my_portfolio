@@ -28,6 +28,7 @@ import sgbau from "./company/sgbau.png"
 import maharashtra_board from "./company/maharashtra_state_board.png"
 import mayora from "./company/mayora.png"
 import angsoftware from "./company/angsoftware.png"
+import neosoft from "./company/neosoft.png"
 import google from "./company/google.png"
 import whmis from "./company/whmis.png"
 import microsoft from "./company/microsoft.png";
@@ -52,6 +53,7 @@ export {
   prmitr,
   sgbau,
   maharashtra_board,
+  neosoft,
   mayora,
   angsoftware,
   google,
